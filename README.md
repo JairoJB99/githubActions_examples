@@ -1,5 +1,5 @@
 ## Push failed
-![Fail](./images/Errors.png)
+![Fail](./images/Errors.jpeg)
 
 ## Push success
 ![Correct](./images/Success.png)
