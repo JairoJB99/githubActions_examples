@@ -4,7 +4,7 @@ on:
   branches:
    - nodejs_jest_job
 jobs:
- linter-execution:
+  linter-execution:
    name: linter-execution
    runs-on: ubuntu-latest
    steps:
@@ -18,9 +18,10 @@ jobs:
           LINTER_RULES_PATH: /
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
           VALIDATE_JAVASCRIPT_ES: true
- test-execution:
+  test-execution:
     name: test-execution
     runs-on: ubuntu-latest
+    needs: linter-execution
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
