@@ -1,5 +1,8 @@
-## Push failed
-![Fail](./images/Errors.jpeg)
+## Linter
+![Fail](./images/Linter_Success.png)
 
-## Push success
-![Correct](./images/Success.png)
+## Test jest
+![Correct](./images/testjest.png)
+
+## Build Secuence
+![Correct](./images/build_secuence.png)
