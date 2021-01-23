@@ -2,7 +2,7 @@ name: main_workflow
 on: 
  push: 
   branches:
-   - nodejs_nodeversions_job
+   - nodejs_environment_job
 jobs:
   linter-execution:
    name: linter-execution
@@ -20,7 +20,7 @@ jobs:
     - name: LinterExecution
       uses: github/super-linter@v3
       env:
-          DEFAULT_BRANCH: nodejs_nodeversions_job
+          DEFAULT_BRANCH: nodejs_environment_job
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LINTER_RULES_PATH: /
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
