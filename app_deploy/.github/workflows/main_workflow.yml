@@ -1,0 +1,37 @@
+name: main_workflow
+on: 
+ push: 
+  branches:
+   - react_app_deploy
+jobs:
+  build:
+   name: build
+   runs-on: ubuntu-latest
+   steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Execute
+      run: |
+        npm install
+        npm run build
+    - name: Up
+      uses: actions/upload-artifact@v2
+      with:
+        name: artifacts
+        path: build
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Dowloading Artifacts
+        uses: actions/download-artifact@v2
+        with: 
+          name: artifacts
+      - name: Deploy Artifact 
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: jairojb99.surge.sh
+          project: .
+          login: ${{secrets.E_LoginSurge }}
+          token: ${{secrets.Token_Surge }}
