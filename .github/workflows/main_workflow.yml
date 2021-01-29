@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Send message
-        uses: .github/actions/
+        uses: ./actions/
         with:
           token_telegram: ${{ secrets.TELEGRAM_TOKEN }}
           chat_id: ${{ secrets.TELEGRAM_GROUP }}
