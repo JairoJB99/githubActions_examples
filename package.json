@@ -1,0 +1,24 @@
+{
+  "name": "githubActions_examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JairoJB99/githubActions_examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JairoJB99/githubActions_examples/issues"
+  },
+  "homepage": "https://github.com/JairoJB99/githubActions_examples#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "node-telegram-bot-api": "^0.51.0"
+  }
+}
