@@ -14,7 +14,7 @@ try {
                             Name: ${git.head_commit.author.name} \n
                             Username: ${git.head_commit.author.username} \n
                             Email: ${git.head_commit.author.email} \n
-                            Message_Commit: ${git.head_commit.message} \nn`);
+                            Message_Commit: ${git.head_commit.message} \n`);
 } catch (error) {
   core.setFailed(error.message);
 }
