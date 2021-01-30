@@ -10,9 +10,6 @@ inputs:
   username:
     description: "Username"
     required: true
-outputs:
-  response:
-    description: "Response"
 runs:
   using: "node12"
   main: "dist/index.js"
