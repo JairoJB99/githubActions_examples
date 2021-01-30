@@ -213,7 +213,7 @@ try {
   core.setFailed(error.message);
 }
 
-console.log("response", "Mensaje enviado");
+console.log("Mensaje enviado");
 
 /***/ }),
 
