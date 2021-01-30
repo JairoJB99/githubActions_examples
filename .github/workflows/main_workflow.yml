@@ -16,4 +16,4 @@ jobs:
         with:
           token_telegram: ${{ secrets.TELEGRAM_TOKEN }}
           chat_id: ${{ secrets.TELEGRAM_GROUP }}
-          name: "Jairo"
+          username: "Jairo"
