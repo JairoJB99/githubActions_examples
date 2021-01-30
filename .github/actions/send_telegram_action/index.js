@@ -14,4 +14,4 @@ try {
   core.setFailed(error.message);
 }
 
-core.setOutput("response", "Mensaje enviado");
+console.log("response", "Mensaje enviado");

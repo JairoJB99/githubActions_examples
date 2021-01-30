@@ -208,17 +208,12 @@ const chatId = core.getInput('chat_id');
 const username = core.getInput('username')
 
 try {
-  bot.sendMessage(chatId, `Workflow ejecutado correctamente tras el último commit. Saludos ${username}
-                            COMMIT INFO: /n
-                            Name: ${git.head_commit.author.name} /n
-                            Username: ${git.head_commit.author.username} /n
-                            Email: ${git.head_commit.author.email} /n
-                            Message_Commit: ${git.head_commit.message} /n`);
+  bot.sendMessage(chatId, `Workflow ejecutado correctamente tras el último commit. Saludos ${username}\nCOMMIT INFO: \nName: ${git.head_commit.author.name}\nUsername: ${git.head_commit.author.username}\nEmail: ${git.head_commit.author.email}\nMessage_Commit: ${git.head_commit.message} \n`);
 } catch (error) {
   core.setFailed(error.message);
 }
 
-core.setOutput("response", "Mensaje enviado");
+console.log("response", "Mensaje enviado");
 
 /***/ }),
 
